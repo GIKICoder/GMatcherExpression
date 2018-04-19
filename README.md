@@ -24,6 +24,7 @@ NSArray * ACS = [AC matchesInString:self.searchStr];
 
 ```
 ```objc
+/// 均支持block 回调
 [AC enumerateMatchesInString:self.searchStr usingBlock:^(GMatcherResult *result, BOOL *stop) {
 
 }];
