@@ -30,6 +30,8 @@
 - (void)testKMP
 {
    
+    self.searchKeywords = @[@"牛逼",@"屌丝",@"程序员"];
+    self.searchStr = @"xx是一个牛逼的屌丝程序员";
     NSLog(@"KMP:");
     NSDate *start = [NSDate date];
     GMatcherExpression * KMP = [GMatcherExpression matcherExpressionWithPatterns:self.searchKeywords option:GMatchingOption_KMP];
@@ -42,7 +44,7 @@
     NSArray * Regexs = [Regex matchesInString:self.searchStr];
      __block int count = 0;
     [Regex enumerateMatchesInString:self.searchStr usingBlock:^(GMatcherResult *result, BOOL *stop) {
-        count ++;
+        
     }];
     NSLog(@"excute time:%f", [[NSDate date] timeIntervalSinceDate:start]);
     
