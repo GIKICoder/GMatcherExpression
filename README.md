@@ -28,3 +28,35 @@ NSArray * ACS = [AC matchesInString:self.searchStr];
 
 }];
 ```
+
+```objc
+/// oc传统字符串匹配
+- (NSArray*)matchAndReplaceCommonKeyWithCommonKeyArray:(NSArray<NSString *> *)commenKeyArray searchString:(NSString*)searchStr
+{
+NSMutableArray * array = [NSMutableArray array];
+for (NSString *child in commenKeyArray) {
+if (child.length == 0) continue;
+NSRange searchRange = NSMakeRange(0, searchStr.length);
+NSRange range;
+do {
+range = [searchStr rangeOfString:child options:kNilOptions range:searchRange];
+if (range.location == NSNotFound) break;
+
+searchRange.location = searchRange.location + (range.length ? range.length : 1);
+if (searchRange.location + 1>= searchStr.length) break;
+searchRange.length = searchStr.length - searchRange.location;
+[array addObject:[NSValue valueWithRange:searchRange]];
+} while (1);
+}
+return array.copy;
+}
+```
+```
+匹配效率对比（ms）：
+KMP:
+excute time:0.202863
+AC:
+excute time:0.008575
+range:
+excute time:8.845589
+```

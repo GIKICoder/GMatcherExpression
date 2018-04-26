@@ -30,23 +30,14 @@
 - (void)testKMP
 {
    
-    self.searchKeywords = @[@"牛逼",@"屌丝",@"程序员"];
-    self.searchStr = @"xx是一个牛逼的屌丝程序员";
+//    self.searchKeywords = @[@"牛逼",@"屌丝",@"程序员"];
+//    self.searchStr = @"xx是一个牛逼的屌丝程序员";
     NSLog(@"KMP:");
     NSDate *start = [NSDate date];
     GMatcherExpression * KMP = [GMatcherExpression matcherExpressionWithPatterns:self.searchKeywords option:GMatchingOption_KMP];
     NSArray * kmps = [KMP matchesInString:self.searchStr];
     NSLog(@"excute time:%f", [[NSDate date] timeIntervalSinceDate:start]);
     
-    NSLog(@"Regexs:");
-    start = [NSDate date];
-    GMatcherExpression * Regex = [GMatcherExpression matcherExpressionWithPatterns:self.searchKeywords option:GMatchingOption_Regex];
-    NSArray * Regexs = [Regex matchesInString:self.searchStr];
-     __block int count = 0;
-    [Regex enumerateMatchesInString:self.searchStr usingBlock:^(GMatcherResult *result, BOOL *stop) {
-        
-    }];
-    NSLog(@"excute time:%f", [[NSDate date] timeIntervalSinceDate:start]);
     
     NSLog(@"AC:");
     start = [NSDate date];
@@ -56,14 +47,15 @@
  
     NSLog(@"range:");
     start = [NSDate date];
-    [self matchAndReplaceCommonKeyWithCommonKeyArray:self.searchKeywords searchString:self.searchStr];
+    NSArray * ranges = [self matchAndReplaceCommonKeyWithCommonKeyArray:self.searchKeywords searchString:self.searchStr];
     NSLog(@"excute time:%f", [[NSDate date] timeIntervalSinceDate:start]);
-    NSLog(@"kmpcount--%ld; account--%ld; RegexsCount--%ld %ld",kmps.count,ACS.count,Regexs.count,count);
+    NSLog(@"kmpcount--%ld; account--%ld;ranges--%ld",kmps.count,ACS.count,ranges.count);
 }
 
 
-- (void)matchAndReplaceCommonKeyWithCommonKeyArray:(NSArray<NSString *> *)commenKeyArray searchString:(NSString*)searchStr
+- (NSArray*)matchAndReplaceCommonKeyWithCommonKeyArray:(NSArray<NSString *> *)commenKeyArray searchString:(NSString*)searchStr
 {
+    NSMutableArray * array = [NSMutableArray array];
     for (NSString *child in commenKeyArray) {
         if (child.length == 0) continue;
         NSRange searchRange = NSMakeRange(0, searchStr.length);
@@ -75,8 +67,10 @@
             searchRange.location = searchRange.location + (range.length ? range.length : 1);
             if (searchRange.location + 1>= searchStr.length) break;
             searchRange.length = searchStr.length - searchRange.location;
+            [array addObject:[NSValue valueWithRange:range]];
         } while (1);
     }
+    return array.copy;
 }
 
 @end
