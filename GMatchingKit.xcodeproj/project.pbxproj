@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02D7A22F66DED972D805131B /* libPods-GMatchingKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF071CA1E3C0DD70587CB7B1 /* libPods-GMatchingKit.a */; };
 		2BDCBEF12085CBCC000055FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDCBEF02085CBCC000055FE /* AppDelegate.m */; };
 		2BDCBEF42085CBCC000055FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDCBEF32085CBCC000055FE /* ViewController.m */; };
 		2BDCBEF72085CBCC000055FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BDCBEF52085CBCC000055FE /* Main.storyboard */; };
@@ -23,6 +24,13 @@
 		2BDCBF7220877645000055FE /* GMatcherExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDCBF6B20877645000055FE /* GMatcherExpression.m */; };
 		2BDCBF7520877800000055FE /* SearchStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDCBF7420877800000055FE /* SearchStringTest.m */; };
 		2BDCBF9C20889963000055FE /* GKMPMatcherProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDCBF9B20889963000055FE /* GKMPMatcherProcessor.m */; };
+		2BDE30BD23546B2E00112C77 /* ZYAttributedFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE30B723546B2E00112C77 /* ZYAttributedFactory.m */; };
+		2BDE30BE23546B2E00112C77 /* ZYAttributedToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE30BB23546B2E00112C77 /* ZYAttributedToken.m */; };
+		2BDE30BF23546B2E00112C77 /* ZYAttributedConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE30BC23546B2E00112C77 /* ZYAttributedConfig.m */; };
+		2BDE30C223546C4200112C77 /* ZYRichLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE30C023546C4200112C77 /* ZYRichLabelController.m */; };
+		2BDE30C523546E6D00112C77 /* ZYTokenAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE30C423546E6D00112C77 /* ZYTokenAppearance.m */; };
+		7B0B2F30F9B62C9FCC9F4660 /* libPods-GMatchingKitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3D140B9B50E5D4BD25AA80 /* libPods-GMatchingKitUITests.a */; };
+		D9EE9A88DAED319625C76BFB /* libPods-GMatchingKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C24B33D737A5D000A64ACA91 /* libPods-GMatchingKitTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15521A27C26DF5E313CAD70D /* Pods-GMatchingKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMatchingKit.debug.xcconfig"; path = "Target Support Files/Pods-GMatchingKit/Pods-GMatchingKit.debug.xcconfig"; sourceTree = "<group>"; };
+		1A2FA2F53126F58C35067FAA /* Pods-GMatchingKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMatchingKit.release.xcconfig"; path = "Target Support Files/Pods-GMatchingKit/Pods-GMatchingKit.release.xcconfig"; sourceTree = "<group>"; };
 		2BDCBEEC2085CBCC000055FE /* GMatchingKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMatchingKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDCBEEF2085CBCC000055FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BDCBEF02085CBCC000055FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +87,23 @@
 		2BDCBF992088953B000055FE /* IMatcherObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMatcherObject.h; sourceTree = "<group>"; };
 		2BDCBF9A20889963000055FE /* GKMPMatcherProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKMPMatcherProcessor.h; sourceTree = "<group>"; };
 		2BDCBF9B20889963000055FE /* GKMPMatcherProcessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKMPMatcherProcessor.m; sourceTree = "<group>"; };
+		2BDE30B723546B2E00112C77 /* ZYAttributedFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAttributedFactory.m; sourceTree = "<group>"; };
+		2BDE30B823546B2E00112C77 /* ZYAttributedConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAttributedConfig.h; sourceTree = "<group>"; };
+		2BDE30B923546B2E00112C77 /* ZYAttributedToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAttributedToken.h; sourceTree = "<group>"; };
+		2BDE30BA23546B2E00112C77 /* ZYAttributedFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAttributedFactory.h; sourceTree = "<group>"; };
+		2BDE30BB23546B2E00112C77 /* ZYAttributedToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAttributedToken.m; sourceTree = "<group>"; };
+		2BDE30BC23546B2E00112C77 /* ZYAttributedConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAttributedConfig.m; sourceTree = "<group>"; };
+		2BDE30C023546C4200112C77 /* ZYRichLabelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRichLabelController.m; sourceTree = "<group>"; };
+		2BDE30C123546C4200112C77 /* ZYRichLabelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRichLabelController.h; sourceTree = "<group>"; };
+		2BDE30C323546E6D00112C77 /* ZYTokenAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYTokenAppearance.h; sourceTree = "<group>"; };
+		2BDE30C423546E6D00112C77 /* ZYTokenAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYTokenAppearance.m; sourceTree = "<group>"; };
+		3107DEF745C41A58A1148128 /* Pods-GMatchingKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMatchingKitTests.debug.xcconfig"; path = "Target Support Files/Pods-GMatchingKitTests/Pods-GMatchingKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6ADC22C63C98FD7BD274C69A /* Pods-GMatchingKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMatchingKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-GMatchingKitUITests/Pods-GMatchingKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7BA8A70578836C9687DBA984 /* Pods-GMatchingKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMatchingKitTests.release.xcconfig"; path = "Target Support Files/Pods-GMatchingKitTests/Pods-GMatchingKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B3D140B9B50E5D4BD25AA80 /* libPods-GMatchingKitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GMatchingKitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88D99C1A7CB7CD406EEF740 /* Pods-GMatchingKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMatchingKitUITests.release.xcconfig"; path = "Target Support Files/Pods-GMatchingKitUITests/Pods-GMatchingKitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C24B33D737A5D000A64ACA91 /* libPods-GMatchingKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GMatchingKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF071CA1E3C0DD70587CB7B1 /* libPods-GMatchingKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GMatchingKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D7A22F66DED972D805131B /* libPods-GMatchingKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EE9A88DAED319625C76BFB /* libPods-GMatchingKitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +127,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0B2F30F9B62C9FCC9F4660 /* libPods-GMatchingKitUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		211870CFD7E7FAF94400699E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15521A27C26DF5E313CAD70D /* Pods-GMatchingKit.debug.xcconfig */,
+				1A2FA2F53126F58C35067FAA /* Pods-GMatchingKit.release.xcconfig */,
+				3107DEF745C41A58A1148128 /* Pods-GMatchingKitTests.debug.xcconfig */,
+				7BA8A70578836C9687DBA984 /* Pods-GMatchingKitTests.release.xcconfig */,
+				6ADC22C63C98FD7BD274C69A /* Pods-GMatchingKitUITests.debug.xcconfig */,
+				A88D99C1A7CB7CD406EEF740 /* Pods-GMatchingKitUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2BDCBEE32085CBCC000055FE = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +154,8 @@
 				2BDCBF072085CBCC000055FE /* GMatchingKitTests */,
 				2BDCBF122085CBCC000055FE /* GMatchingKitUITests */,
 				2BDCBEED2085CBCC000055FE /* Products */,
+				211870CFD7E7FAF94400699E /* Pods */,
+				EEE8F0677E7E94A93C067E2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,11 +172,14 @@
 		2BDCBEEE2085CBCC000055FE /* GMatchingKit */ = {
 			isa = PBXGroup;
 			children = (
+				2BDE30B623546B2E00112C77 /* ZYAttributedManager */,
 				2BDCBF5A20877645000055FE /* GMatching */,
 				2BDCBEEF2085CBCC000055FE /* AppDelegate.h */,
 				2BDCBEF02085CBCC000055FE /* AppDelegate.m */,
 				2BDCBEF22085CBCC000055FE /* ViewController.h */,
 				2BDCBEF32085CBCC000055FE /* ViewController.m */,
+				2BDE30C123546C4200112C77 /* ZYRichLabelController.h */,
+				2BDE30C023546C4200112C77 /* ZYRichLabelController.m */,
 				2BDCBF7320877800000055FE /* SearchStringTest.h */,
 				2BDCBF7420877800000055FE /* SearchStringTest.m */,
 				2BDCBEF52085CBCC000055FE /* Main.storyboard */,
@@ -200,6 +248,31 @@
 			path = GMatcherUtil;
 			sourceTree = "<group>";
 		};
+		2BDE30B623546B2E00112C77 /* ZYAttributedManager */ = {
+			isa = PBXGroup;
+			children = (
+				2BDE30BA23546B2E00112C77 /* ZYAttributedFactory.h */,
+				2BDE30B723546B2E00112C77 /* ZYAttributedFactory.m */,
+				2BDE30B823546B2E00112C77 /* ZYAttributedConfig.h */,
+				2BDE30BC23546B2E00112C77 /* ZYAttributedConfig.m */,
+				2BDE30B923546B2E00112C77 /* ZYAttributedToken.h */,
+				2BDE30BB23546B2E00112C77 /* ZYAttributedToken.m */,
+				2BDE30C323546E6D00112C77 /* ZYTokenAppearance.h */,
+				2BDE30C423546E6D00112C77 /* ZYTokenAppearance.m */,
+			);
+			path = ZYAttributedManager;
+			sourceTree = SOURCE_ROOT;
+		};
+		EEE8F0677E7E94A93C067E2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF071CA1E3C0DD70587CB7B1 /* libPods-GMatchingKit.a */,
+				C24B33D737A5D000A64ACA91 /* libPods-GMatchingKitTests.a */,
+				9B3D140B9B50E5D4BD25AA80 /* libPods-GMatchingKitUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,6 +280,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BDCBF182085CBCC000055FE /* Build configuration list for PBXNativeTarget "GMatchingKit" */;
 			buildPhases = (
+				67D47AF95ED57896A1748287 /* [CP] Check Pods Manifest.lock */,
 				2BDCBEE82085CBCC000055FE /* Sources */,
 				2BDCBEE92085CBCC000055FE /* Frameworks */,
 				2BDCBEEA2085CBCC000055FE /* Resources */,
@@ -224,6 +298,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BDCBF1B2085CBCC000055FE /* Build configuration list for PBXNativeTarget "GMatchingKitTests" */;
 			buildPhases = (
+				B92A58C2DD4D23D2E5818FB1 /* [CP] Check Pods Manifest.lock */,
 				2BDCBF002085CBCC000055FE /* Sources */,
 				2BDCBF012085CBCC000055FE /* Frameworks */,
 				2BDCBF022085CBCC000055FE /* Resources */,
@@ -242,6 +317,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BDCBF1E2085CBCC000055FE /* Build configuration list for PBXNativeTarget "GMatchingKitUITests" */;
 			buildPhases = (
+				2AC90967F9F6E305566AA11E /* [CP] Check Pods Manifest.lock */,
 				2BDCBF0B2085CBCC000055FE /* Sources */,
 				2BDCBF0C2085CBCC000055FE /* Frameworks */,
 				2BDCBF0D2085CBCC000055FE /* Resources */,
@@ -328,6 +404,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AC90967F9F6E305566AA11E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMatchingKitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67D47AF95ED57896A1748287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMatchingKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B92A58C2DD4D23D2E5818FB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMatchingKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2BDCBEE82085CBCC000055FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -335,12 +480,17 @@
 			files = (
 				2BDCBF7520877800000055FE /* SearchStringTest.m in Sources */,
 				2BDCBF6D20877645000055FE /* GRegexMatcherProcessor.m in Sources */,
+				2BDE30C523546E6D00112C77 /* ZYTokenAppearance.m in Sources */,
 				2BDCBEF42085CBCC000055FE /* ViewController.m in Sources */,
+				2BDE30BD23546B2E00112C77 /* ZYAttributedFactory.m in Sources */,
 				2BDCBEFF2085CBCC000055FE /* main.m in Sources */,
 				2BDCBF9C20889963000055FE /* GKMPMatcherProcessor.m in Sources */,
+				2BDE30BF23546B2E00112C77 /* ZYAttributedConfig.m in Sources */,
 				2BDCBF7120877645000055FE /* GThreadSafeDictionary.m in Sources */,
 				2BDCBEF12085CBCC000055FE /* AppDelegate.m in Sources */,
 				2BDCBF7220877645000055FE /* GMatcherExpression.m in Sources */,
+				2BDE30C223546C4200112C77 /* ZYRichLabelController.m in Sources */,
+				2BDE30BE23546B2E00112C77 /* ZYAttributedToken.m in Sources */,
 				2BDCBF7020877645000055FE /* GMatcherResult.m in Sources */,
 				2BDCBF6F20877645000055FE /* GThreadSafeArray.m in Sources */,
 				2BDCBF6C20877645000055FE /* GACMatcherProcessor.m in Sources */,
@@ -504,6 +654,7 @@
 		};
 		2BDCBF192085CBCC000055FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15521A27C26DF5E313CAD70D /* Pods-GMatchingKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -518,6 +669,7 @@
 		};
 		2BDCBF1A2085CBCC000055FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2FA2F53126F58C35067FAA /* Pods-GMatchingKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +684,7 @@
 		};
 		2BDCBF1C2085CBCC000055FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3107DEF745C41A58A1148128 /* Pods-GMatchingKitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -547,6 +700,7 @@
 		};
 		2BDCBF1D2085CBCC000055FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA8A70578836C9687DBA984 /* Pods-GMatchingKitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -562,6 +716,7 @@
 		};
 		2BDCBF1F2085CBCC000055FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ADC22C63C98FD7BD274C69A /* Pods-GMatchingKitUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCF9CM736N;
@@ -576,6 +731,7 @@
 		};
 		2BDCBF202085CBCC000055FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88D99C1A7CB7CD406EEF740 /* Pods-GMatchingKitUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCF9CM736N;
